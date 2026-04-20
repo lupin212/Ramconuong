@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trắc nghiệm Tin học lớp 3</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px 16px 56px;
+    }
+    .hero, .card, .summary {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 24px;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
+    }
+    .hero {
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+    }
+    .hero p {
+      margin: 0;
+      color: #475569;
+      font-size: 1.05rem;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .pill {
+      background: #f1f5f9;
+      color: #334155;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.92rem;
+    }
+    .card {
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .card-header h2 {
+      margin: 0;
+      font-size: 1.18rem;
+    }
+    .badge {
+      white-space: nowrap;
+      background: #dcfce7;
+      color: #166534;
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .option {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+    }
+    .option.correct {
+      background: #ecfdf5;
+      border-color: #86efac;
+      color: #14532d;
+      font-weight: 700;
+    }
+    .explain {
+      margin-top: 16px;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 18px;
+      padding: 16px;
+    }
+    .explain strong {
+      color: #92400e;
+    }
+    .answer-line {
+      margin-top: 10px;
+      color: #475569;
+      font-size: 0.95rem;
+    }
+    .summary {
+      background: #0f172a;
+      color: white;
+      padding: 24px;
+      margin-top: 28px;
+    }
+    .summary p {
+      margin: 10px 0 0;
+      color: #cbd5e1;
+      line-height: 1.9;
+    }
+    @media (max-width: 720px) {
+      h1 { font-size: 1.65rem; }
+      .card-header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Trắc nghiệm Tin học lớp 3</h1>
+      <p>Bộ đáp án tham khảo từ đề cương ôn tập cuối học kì II. Mỗi câu có đáp án đúng và lời giải ngắn để dễ ôn tập và chia sẻ.</p>
+      <div class="meta">
+        <span class="pill">15 câu</span>
+        <span class="pill">Có đáp án đúng</span>
+        <span class="pill">Có giải thích</span>
+        <span class="pill">Dùng được trên GitHub Pages</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 1. Ổ đĩa được gọi là thư mục gì?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option">A. Thư mục nhỏ</div>
+      <div class="option">B. Thư mục con</div>
+      <div class="option">C. Thư mục lớn</div>
+      <div class="option correct">D. Thư mục gốc</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Ổ đĩa là nơi chứa các thư mục và tệp bên trong, nên được xem là thư mục gốc.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> D. Thư mục gốc</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 2. Tên bài trình chiếu lưu vào máy tính nào đặt đúng quy tắc?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option">A. Truong/em.docx</div>
+      <div class="option correct">B. Truongem.pptx</div>
+      <div class="option">C. Truong*em.pptx</div>
+      <div class="option">D. Truongem?.pptx</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Tên tệp không được chứa các kí tự đặc biệt như /, *, ?. Đáp án B đúng quy tắc và có đuôi .pptx của PowerPoint.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> B. Truongem.pptx</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 3. Biểu tượng của This PC là:</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option">A</div>
+      <div class="option correct">B</div>
+      <div class="option">C</div>
+      <div class="option">D</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Biểu tượng This PC thường là hình chiếc máy tính hoặc màn hình máy tính.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> B</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 4. Những thông tin nào sau đây là thông tin cá nhân của một học sinh?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option correct">A. Họ tên, ngày sinh, mã định danh cá nhân</div>
+      <div class="option">B. Tên trường, tên lớp, tên cô giáo chủ nhiệm</div>
+      <div class="option">C. Số điện thoại công an phường</div>
+      <div class="option">D. Cả 3 đáp án trên đều đúng</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Đây là những thông tin riêng của mỗi học sinh.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> A. Họ tên, ngày sinh, mã định danh cá nhân</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 5. Khi đăng nhập vào tài khoản cá nhân trên các máy tính công cộng, việc nên làm là?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option">A. Để chế độ tự động đăng nhập</div>
+      <div class="option">B. Để chế độ ghi nhớ mật khẩu</div>
+      <div class="option">C. Không cần phải thoát tài khoản sau khi sử dụng</div>
+      <div class="option correct">D. Không để chế độ ghi nhớ mật khẩu và đăng xuất tài khoản sau khi sử dụng</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Máy tính công cộng có nhiều người dùng nên không được lưu mật khẩu và phải đăng xuất sau khi dùng xong.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> D</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 6. Em cần làm gì để bảo vệ thông tin của em và gia đình?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option">A. Cung cấp thông tin cá nhân, mật khẩu cho người không quen biết</div>
+      <div class="option">B. Gửi và nhận tệp từ người lạ</div>
+      <div class="option correct">C. Không trò chuyện hay cung cấp thông tin cá nhân, mật khẩu cho người không quen biết, không gửi và nhận tệp từ người lạ</div>
+      <div class="option">D. Công khai thông tin cá nhân và gia đình trên mạng xã hội</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Đây là cách an toàn để bảo vệ thông tin cá nhân và gia đình trên mạng.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> C</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 7. Đâu là biểu tượng của phần mềm luyện tập chuột Basic Mouse Skills?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option">A</div>
+      <div class="option">B</div>
+      <div class="option">C</div>
+      <div class="option correct">D</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Trong các hình cho sẵn, biểu tượng đúng của phần mềm Basic Mouse Skills là đáp án D.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> D</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 8. Nháy đúp chuột vào biểu tượng nào sau đây trên màn hình nền để khởi động phần mềm trình chiếu PowerPoint?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option correct">A</div>
+      <div class="option">B</div>
+      <div class="option">C</div>
+      <div class="option">D</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> PowerPoint có biểu tượng chữ P đặc trưng.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> A</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 9. Khẳng định nào sai khi nói về việc sắp xếp công việc?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option">A. Một việc có thể chia thành những việc nhỏ hơn</div>
+      <div class="option">B. Chia một việc thành những việc nhỏ giúp chúng ta dễ hiểu và dễ thực hiện</div>
+      <div class="option correct">C. Khi thực hiện một việc, chúng ta không nên chia nhỏ việc đó thành những việc nhỏ hơn sẽ khó thực hiện</div>
+      <div class="option">D. Có nhiều công việc được thực hiện theo từng bước, mỗi bước là một việc nhỏ và các bước phải được sắp xếp theo một thứ tự nhất định</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Câu C sai vì chia một việc lớn thành việc nhỏ sẽ giúp dễ làm hơn.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> C</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 10. Em hãy sắp xếp các hình dưới đây theo thứ tự để vẽ con cừu?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option">A. 5 → 1 → 4 → 2 → 3</div>
+      <div class="option">B. 3 → 2 → 1 → 5 → 4</div>
+      <div class="option correct">C. 3 → 2 → 1 → 4 → 5</div>
+      <div class="option">D. 3 → 1 → 5 → 2 → 4</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Cần sắp xếp theo thứ tự từ hình đơn giản đến hình hoàn chỉnh.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> C</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 11. “Nếu em chăm chỉ học hành thì…”. Điền vào vế sau sao cho hợp lí:</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option">A. em sẽ đạt học sinh giỏi</div>
+      <div class="option">B. em sẽ là học sinh trung bình</div>
+      <div class="option">C. em sẽ được cô giáo khen</div>
+      <div class="option correct">D. Cả A và C đều đúng</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Nếu chăm chỉ học thì em có thể học giỏi và được cô giáo khen.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> D</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 12. Em lựa chọn đồng ý thực hiện theo yêu cầu của ai trong các trường hợp sau?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option">A. Người lạ gửi đường liên kết có nội dung gây tò mò</div>
+      <div class="option">B. Người quen của bố yêu cầu gửi ảnh của em</div>
+      <div class="option">C. Người lạ gửi tin nhắn xin địa chỉ nhà em</div>
+      <div class="option correct">D. Giáo viên yêu cầu em gửi số điện thoại của mẹ</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Giáo viên là người đáng tin cậy trong học tập, còn các yêu cầu từ người lạ đều không an toàn.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> D</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 13. Em hãy chuyển mỗi câu sau đây thành cách nói “Nếu … thì …”</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option correct">A. Nếu em đi học muộn thì lớp em sẽ bị trừ điểm thi đua</div>
+      <div class="option correct">B. Nếu đi bộ đi học thì em cần đi trên vỉa hè</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Đây là hai câu được chuyển đúng sang mẫu “Nếu… thì…”.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> A và B đều đúng khi viết lại theo mẫu câu điều kiện</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 14. Hãy điền các cụm từ vào chỗ chấm ở các bước dưới hình vẽ cho thích hợp.</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option correct">1. Vẽ thân</div>
+      <div class="option correct">2. Vẽ mắt, miệng</div>
+      <div class="option correct">3. Vẽ chân, tay</div>
+      <div class="option correct">4. Vẽ mũ</div>
+      <div class="option correct">5. Tô màu</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Thực hiện theo trình tự từ hình chính đến các chi tiết rồi tô màu hoàn chỉnh.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> Vẽ thân → Vẽ mắt, miệng → Vẽ chân, tay → Vẽ mũ → Tô màu</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Câu 15. Em hãy sắp xếp các việc dưới đây theo thứ tự để được các bước chèn hình vào trang trình chiếu?</h2>
+        <span class="badge">Đáp án đúng</span>
+      </div>
+      <div class="option correct">A. 2 → 1 → 4 → 3</div>
+      <div class="option">B. 3 → 1 → 4 → 2</div>
+      <div class="option">C. 2 → 4 → 1 → 3</div>
+      <div class="option">D. 3 → 4 → 1 → 2</div>
+      <div class="explain">
+        <strong>Giải thích:</strong> Các bước đúng là: mở thẻ Insert, chọn Pictures, chọn tệp hình, rồi nhấn Insert.
+        <div class="answer-line"><strong>Chốt đáp án:</strong> A</div>
+      </div>
+    </section>
+
+    <section class="summary">
+      <h2>Tóm tắt đáp án</h2>
+      <p>1.D · 2.B · 3.B · 4.A · 5.D · 6.C · 7.D · 8.A · 9.C · 10.C · 11.D · 12.D · 13.A và B · 14.Vẽ thân → Vẽ mắt, miệng → Vẽ chân, tay → Vẽ mũ → Tô màu · 15.A</p>
+    </section>
+  </div>
+</body>
+</html>
